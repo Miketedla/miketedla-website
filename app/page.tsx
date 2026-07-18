@@ -30,7 +30,34 @@ export default function Home() {
 
       {/* Vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,.75)_100%)]" />
+<nav className="absolute top-0 left-0 z-20 w-full px-8 py-8">
+  <div className="mx-auto flex max-w-7xl items-center justify-between">
 
+    <span className="text-sm uppercase tracking-[0.45em] text-white/90">
+      MIKE TEDLA
+    </span>
+
+    <div className="flex items-center gap-10">
+
+      <a
+        href="https://instagram.com/micketedla"
+        target="_blank"
+        className="text-xs uppercase tracking-[0.3em] text-white/70 transition hover:text-white"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="mailto:booking@miketedla.com"
+        className="text-xs uppercase tracking-[0.3em] text-white/70 transition hover:text-white"
+      >
+        Kontakt
+      </a>
+
+    </div>
+
+  </div>
+</nav>
       {/* Content */}
       <section className="relative z-10 flex h-full items-center justify-center px-8">
 
@@ -54,7 +81,7 @@ export default function Home() {
           </h2>
 
           <p className="mx-auto mt-8 max-w-lg text-base leading-8 text-white/70">
-            Musikupplevelser för företagsevent, restauranger,
+            Musikupplevelser för företag, restauranger,
             nattklubbar och privata tillställningar.
           </p>
 
