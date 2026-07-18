@@ -51,7 +51,7 @@ export default function Home() {
   <span className="mx-4 text-white/30">·</span>
 
   <a
-    href="https://soundcloud.com/mike-tedla"
+    href="https://soundcloud.com/miketedla"
     target="_blank"
     rel="noopener noreferrer"
     className="transition hover:text-white"
