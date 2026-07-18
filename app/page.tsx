@@ -36,17 +36,8 @@ export default function Home() {
 
         <div className="max-w-4xl text-center text-white">
 
-          <div className="mb-10 flex justify-center">
-            <Image
-              src="/logo.png"
-              alt="Mike Tedla"
-              width={82}
-              height={82}
-              priority
-            />
-          </div>
 
-          <h1 className="text-4xl md:text-6xl font-light tracking-[0.45em] text-white/95">
+          <h1 className="mt-2 text-4xl md:text-6xl font-light tracking-[0.45em] text-white/95">
             MIKE TEDLA
           </h1>
 
