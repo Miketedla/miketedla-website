@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  MT MONOGRAM — MASTER FILE
+  Mike Tedla / miketedla.com
+
+  This is the canonical source file. All other exports (thin, medium,
+  bold/favicon, PNG, PDF, apple-touch-icon) are derived from this file
+  by scaling stroke-width only — geometry never changes.
+
+  Geometry:
+    Canvas: 200 x 200, letterform centered at (100,100)
+    M left leg (heavier stroke):  path #mt-m-left
+    M right diagonal + top:       path #mt-m-right
+    T stem:                       line #mt-t-stem
+
+  Stroke weight reference (multiply base geometry by same ratio):
+    thin    (web/print) : left 1.8  / right+stem 1.5
+    medium  (avatars)   : left 2.2  / right+stem 1.9
+    bold    (favicon)   : left 4.4  / right+stem 3.8
+  Left leg is always ~1.2x the right/stem weight (deliberate optical
+  correction — see brand guide).
+
+  Color: off-white #f2efe9 on transparent ground. Never recolor the
+  mark itself — see brand guide for approved color use.
+-->
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <title>MT monogram — master</title>
+  <desc>Master vector source for the Mike Tedla MT monogram</desc>
+  <g fill="none" stroke="#f2efe9" stroke-linecap="round" stroke-linejoin="round" transform="translate(100,100)">
+    <path id="mt-m-left"  d="M -80 50 L -80 -70 L -60 -70 L -20 5" stroke-width="1.8"/>
+    <path id="mt-m-right" d="M -20 5 L 20 -70 L 40 -70 L 40 8 L 40 -70 L 83 -70" stroke-width="1.5"/>
+    <line id="mt-t-stem"  x1="64" y1="-70" x2="64" y2="52" stroke-width="1.5"/>
+  </g>
+</svg>

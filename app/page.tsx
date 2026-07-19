@@ -30,12 +30,16 @@ export default function Home() {
 
       {/* Vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,.75)_100%)]" />
-<nav className="absolute top-0 left-0 z-20 w-full px-6 py-6 md:px-8 md:py-8">
+<nav className="absolute top-0 left-0 z-20 w-full px-6 py-8 md:px-8 md:py-8">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-   <span className="text-xs md:text-sm uppercase tracking-[0.35em] md:tracking-[0.45em] text-white/90">
-      MIKE TEDLA
-    </span>
+  <Image
+  src="/branding/MT-monogram-master.svg"
+  alt="Mike Tedla"
+  width={60}
+height={60}
+className="h-12 w-auto md:h-14"
+/>
 
     <div className="flex items-center text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/70">
   <a
@@ -84,7 +88,7 @@ export default function Home() {
           <div className="mx-auto mt-6 h-px w-16 bg-[#C8A86A]" />
 
           <p className="mt-5 text-[11px] uppercase tracking-[0.6em] text-[#C8A86A]">
-            DJ & EVENTPARTNER
+            FOR EVENTS & EXPERIENCES
           </p>
 
           <h2
