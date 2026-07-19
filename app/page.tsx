@@ -33,12 +33,10 @@ export default function Home() {
 <nav className="absolute top-0 left-0 z-20 w-full px-6 py-8 md:px-8 md:py-8">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-  <Image
+  <img
   src="/branding/MT-monogram-master.svg"
   alt="Mike Tedla"
-  width={60}
-height={60}
-className="h-12 w-auto md:h-14"
+  className="h-12 w-auto md:h-14"
 />
 
     <div className="flex items-center text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/70">
