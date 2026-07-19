@@ -37,8 +37,7 @@ export default function Home() {
       MIKE TEDLA
     </span>
 
-    <div className="hidden md:flex items-center text-xs uppercase tracking-[0.3em] text-white/70">
-
+    <div className="flex items-center text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/70">
   <a
     href="https://instagram.com/micketedla"
     target="_blank"
@@ -59,14 +58,14 @@ export default function Home() {
     SoundCloud
   </a>
 
-  <span className="mx-4 text-white/30">·</span>
+  <span className="hidden md:inline mx-4 text-white/30">·</span>
 
-  <a
-    href="mailto:booking@miketedla.com"
-    className="transition hover:text-white"
-  >
-    Kontakt
-  </a>
+<a
+  href="mailto:booking@miketedla.com"
+  className="hidden md:inline transition hover:text-white"
+>
+  Kontakt
+</a>
 
 </div>
 
