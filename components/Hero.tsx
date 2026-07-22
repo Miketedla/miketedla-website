@@ -38,7 +38,7 @@ export default function Hero() {
   <img
   src="/branding/MT-monogram-master.svg"
   alt="Mike Tedla"
-  className="h-12 w-auto md:h-14"
+  className="h-10 w-auto md:h-14"
 />
 
     <div className="flex items-center text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/70">
@@ -97,14 +97,14 @@ export default function Hero() {
             Äntligen lite fest. Det var så längesen sist.
           </h2>
 
-          <p className="mx-auto mt-6 max-w-lg text-base leading-8 text-white/70">
+          <p className="mx-auto mt-6 max-w-md text-[15px] leading-7 text-white/70 md:max-w-lg md:text-base md:leading-8">
             Musikupplevelser för företag, restauranger,
             nattklubbar och privata tillställningar.
           </p>
 
           <a
             href="mailto:booking@miketedla.com"
-            className="mt-10 inline-flex border border-[#C8A86A] px-10 py-4 text-sm uppercase tracking-[0.3em] transition-all duration-500 hover:bg-[#C8A86A] hover:text-black"
+            className="mt-10 inline-flex border border-[#C8A86A] px-7 py-4 text-xs uppercase tracking-[0.3em] md:px-10 md:text-sm transition-all duration-500 hover:bg-[#C8A86A] hover:text-black"
           >
             Berätta om ditt event
           </a>

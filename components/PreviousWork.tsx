@@ -66,7 +66,7 @@ export default function PreviousWork() {
 
   return (
     <section className="bg-[#080808] text-[#F2EFE9]">
-      <div className="mx-auto max-w-7xl px-6 py-24 md:px-8 md:py-40">
+      <div className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-40">
 
         <div className="text-center">
 
@@ -74,7 +74,7 @@ export default function PreviousWork() {
             Tidigare uppdrag
           </p>
 
-          <h2 className="text-3xl font-light md:text-6xl">
+          <h2 className="text-2xl font-light md:text-6xl">
             Ett urval
           </h2>
 
