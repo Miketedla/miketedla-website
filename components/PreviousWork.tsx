@@ -36,11 +36,11 @@ function LogoRow({
   }[];
 }) {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-x-20 gap-y-16">
+    <div className="flex flex-wrap justify-center gap-y-12 md:flex md:flex-wrap md:justify-center md:gap-x-20 md:gap-y-16">
       {logos.map((logo) => (
         <div
           key={logo.name}
-         className="flex w-[180px] items-center justify-center transition-opacity duration-300 hover:opacity-100"
+         className="flex w-full items-center justify-center md:w-[180px] transition-opacity duration-300 hover:opacity-100"
           style={{
             height: `${logo.height}px`,
             opacity: 0.5,
@@ -66,7 +66,7 @@ export default function PreviousWork() {
 
   return (
     <section className="bg-[#080808] text-[#F2EFE9]">
-      <div className="mx-auto max-w-7xl px-8 py-40">
+      <div className="mx-auto max-w-7xl px-6 py-24 md:px-8 md:py-40">
 
         <div className="text-center">
 
@@ -74,13 +74,13 @@ export default function PreviousWork() {
             Tidigare uppdrag
           </p>
 
-          <h2 className="text-4xl font-light md:text-6xl">
+          <h2 className="text-3xl font-light md:text-6xl">
             Ett urval
           </h2>
 
         </div>
 
-        <div className="mt-14">
+        <div className="mt-10 md:mt-14">
           <LogoRow logos={featuredLogos} />
         </div>
 
@@ -92,7 +92,7 @@ export default function PreviousWork() {
           <LogoRow logos={hiddenLogos} />
         </div>
 
-        <div className="mt-20 flex justify-center">
+        <div className="mt-14 md:mt-20 flex justify-center">
 
           <button
             onClick={() => setShowMore(!showMore)}

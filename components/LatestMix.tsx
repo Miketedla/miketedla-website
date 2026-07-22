@@ -20,7 +20,7 @@ export default function LatestMix() {
           rel="noopener noreferrer"
           className="group mx-auto mt-20 block max-w-3xl"
         >
-         <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+        <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
             <Image 
               src="/latest-mix.jpg"
               alt="Mike Tedla live"
@@ -28,16 +28,25 @@ export default function LatestMix() {
               height={1400}
               className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+           <div className="absolute inset-0 bg-black/25 transition duration-500 group-hover:bg-black/45" />
           </div>
+<div className="absolute inset-0 flex items-center justify-center">
 
-          <div className="mt-7 text-center">
-            <span className="inline-flex rounded-full border border-neutral-700 px-8 py-4 text-sm uppercase tracking-[0.3em] transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
-              ▶ Lyssna på mixen
-            </span>
+  <div className="flex flex-col items-center transition-all duration-500 group-hover:scale-105">
 
-           
-          </div>
+    <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-black/55 backdrop-blur-sm transition-all duration-300 group-hover:bg-black/70">
+      <span className="ml-1 text-3xl text-white">
+        ▶
+      </span>
+    </div>
+
+    <p className="text-sm uppercase tracking-[0.35em] text-white">
+      Lyssna på mixen
+    </p>
+
+  </div>
+
+</div>
         </a>
       </div>
     </section>
