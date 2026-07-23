@@ -27,7 +27,7 @@ export default function About() {
 
             <p>
               Musiken är mer än en spellista – den formar känslan, energin
-              och minnena som människor tar med sig hem.
+              och minnena.
             </p>
 
             <p>
