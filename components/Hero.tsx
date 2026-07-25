@@ -21,23 +21,27 @@ export default function Hero() {
     <main className={`${manrope.className} relative h-screen overflow-hidden bg-black`}>
 
       {/* Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover scale-110"
-      >
-        <source src="/hero-loop.mp4" type="video/mp4" />
-      </video>
+<video
+  src="/hero-loop-web.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  disablePictureInPicture
+  controls={false}
+  className="absolute inset-0 h-full w-full object-cover scale-110 pointer-events-none"
+/>
+   
+     
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/80 pointer-events-none" />
 
       {/* Vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,.75)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,.75)_100%)] pointer-events-none" />
       {/* Transition to next section */}
-      <div className="absolute bottom-0 left-0 h-48 w-full bg-gradient-to-b from-transparent via-black/40 to-[#0D0D0D]" />
+      <div className="absolute bottom-0 left-0 h-48 w-full bg-gradient-to-b from-transparent via-black/40 to-[#0D0D0D] pointer-events-none" />
 <nav className="absolute top-0 left-0 z-20 w-full px-6 py-8 md:px-8 md:py-8">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
 

@@ -13,7 +13,7 @@ export default function About() {
           <img
             src="/branding/MT-monogram-medium.png"
             alt="Mike Tedla"
-            className="w-24 opacity-90 md:w-36"
+            className="w-24 opacity-90 md:w-50"
           />
         </div>
 

@@ -6,25 +6,31 @@ const featuredLogos = [
   { name: "Adidas", file: "adidas.svg", height: 34 },
   { name: "Carlsberg", file: "carlsberg.svg", height: 34 },
   { name: "Teamtailor", file: "teamtailor.svg", height: 40 },
-  { name: "Le Pacte", file: "lepacte.svg", height: 34 },
+    { name: "CAKE", file: "cake.png", height: 80 },  
   { name: "Berns", file: "berns.svg", height: 60 },
-  { name: "Sturehof", file: "sturehof.svg", height: 38 },
+  { name: "Pepsi", file: "pepsi.svg", height: 60 },
   { name: "Stadshuset", file: "stadshuset.svg", height: 48 },
-  { name: "CAKE", file: "cake.png", height: 80 },
+{ name: "Le Pacte", file: "lepacte.svg", height: 34 },
+    { name: "Sturehof", file: "sturehof.svg", height: 38 },
   { name: "Solvalla", file: "solvalla.svg", height: 34 },
-  { name: "Timmerstugan", file: "timmer.png", height: 80, className: "-mt-20", },
+  { name: "Timmerstugan", file: "timmer.png", height: 34, },
+  { name: "Dassault Systemes", file: "3ds.svg", height: 34, },
 ];
 
 const hiddenLogos = [
   { name: "Restaurang AG", file: "ag.svg", height: 34 },
   { name: "East", file: "east.png", height: 60 },
   { name: "Forefront", file: "forefront.png", height: 60 },
-  { name: "Supper", file: "supper.png", height: 34 },
-  { name: "Sperling & Co", file: "sperling.png", height: 30 },
-  { name: "Broken", file: "broken.png", height: 34 },
+  { name: "Supper", file: "supper.svg", height: 104 },
+ { name: "Nosh and Chow", file: "noshnchow.svg", height: 50 },
+  { name: "Bank Hotel", file: "bankhotel.svg", height: 34 },
+  { name: "Sperling & Co", file: "sperling.png", height: 14 },
   { name: "Tofta bh", file: "tbh.png", height: 34 },
-  { name: "Omaka", file: "omaka.png", height: 34 },
+  { name: "Broken", file: "broken.png", height: 34 },
   { name: "Sostrene Karlsson", file: "sostrene.png", height: 40 },
+   { name: "Surfers", file: "surfers.png", height: 50 },
+   { name: "Omaka", file: "omaka.png", height: 34 },
+   { name: "Gutekällaren", file: "gute.png", height: 50 },
 ];
 
 
@@ -86,24 +92,28 @@ export default function PreviousWork() {
           <LogoRow logos={featuredLogos} />
         </div>
 
-        <div
-          className={`overflow-hidden transition-all duration-700 ${
-            showMore ? "mt-16 max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
+       <div
+  className={`overflow-hidden ${
+    showMore ? "mt-16 max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+  }`}
+>
           <LogoRow logos={hiddenLogos} />
         </div>
 
         <div className="mt-14 md:mt-20 flex justify-center">
 
           <button
-            onClick={() => setShowMore(!showMore)}
-            className="text-sm uppercase tracking-[0.35em] text-neutral-500 transition-colors duration-300 hover:text-white"
-          >
-            {showMore
-              ? "− Visa färre uppdrag"
-              : "+ Visa fler uppdrag"}
-          </button>
+           type="button"
+  onClick={() => {
+    console.log("KLICK!");
+    setShowMore(!showMore);
+  }}
+  className="text-sm uppercase tracking-[0.35em] text-neutral-500 transition-colors duration-300 hover:text-white"
+>
+  {showMore
+    ? "− Visa färre uppdrag"
+    : "+ Visa fler uppdrag"}
+</button>
 
         </div>
 
