@@ -10,7 +10,7 @@ const featuredLogos = [
   { name: "Berns", file: "berns.svg", height: 60 },
   { name: "Sturehof", file: "sturehof.svg", height: 38 },
   { name: "Stadshuset", file: "stadshuset.svg", height: 48 },
-  { name: "CAKE", file: "cake.png", height: 34 },
+  { name: "CAKE", file: "cake.png", height: 80 },
   { name: "Solvalla", file: "solvalla.svg", height: 34 },
   { name: "Timmerstugan", file: "timmer.png", height: 80, className: "-mt-20", },
 ];
@@ -20,7 +20,7 @@ const hiddenLogos = [
   { name: "East", file: "east.png", height: 60 },
   { name: "Forefront", file: "forefront.png", height: 60 },
   { name: "Supper", file: "supper.png", height: 34 },
-  { name: "Sperling & Co", file: "sperling.png", height: 34 },
+  { name: "Sperling & Co", file: "sperling.png", height: 30 },
   { name: "Broken", file: "broken.png", height: 34 },
   { name: "Tofta bh", file: "tbh.png", height: 34 },
   { name: "Omaka", file: "omaka.png", height: 34 },

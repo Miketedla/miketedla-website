@@ -1,5 +1,11 @@
 import Image from "next/image";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import {
+  FaInstagram,
+  FaSoundcloud,
+} from "react-icons/fa6";
+
+import { HiOutlineEnvelope } from "react-icons/hi2";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -41,36 +47,34 @@ export default function Hero() {
   className="h-10 w-auto md:h-14"
 />
 
-    <div className="flex items-center text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/70">
+ <div className="flex items-center gap-5 text-white/60">
   <a
-    href="https://instagram.com/micketedla"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition hover:text-white"
-  >
-    Instagram
-  </a>
-
-  <span className="mx-4 text-white/30">·</span>
-
-  <a
-    href="https://soundcloud.com/miketedla"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition hover:text-white"
-  >
-    SoundCloud
-  </a>
-
-  <span className="hidden md:inline mx-4 text-white/30">·</span>
-
-<a
-  href="mailto:booking@miketedla.com"
-  className="hidden md:inline transition hover:text-white"
+  href="https://instagram.com/micketedla"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  aria-label="Instagram"
 >
-  Kontakt
+  <FaInstagram size={22} />
 </a>
 
+  <a
+  href="https://soundcloud.com/miketedla"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  aria-label="SoundCloud"
+>
+  <FaSoundcloud size={24} />
+</a>
+
+ <a
+  href="mailto:booking@miketedla.com"
+  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  aria-label="Kontakt"
+>
+  <HiOutlineEnvelope size={22} />
+</a>
 </div>
 
   </div>

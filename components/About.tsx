@@ -20,21 +20,20 @@ export default function About() {
         <div className="mx-auto max-w-3xl">
 
           <h2 className="text-4xl font-light leading-[0.95] md:text-8xl">
-            Varje event har sin egen rytm.
+            Musik som lyfter varje ögonblick.
           </h2>
 
           <div className="mt-14 max-w-xl space-y-10 text-lg leading-9 md:text-xl md:leading-10 text-neutral-300">
 
             <p>
-              Musiken är mer än en spellista – den formar känslan, energin
-              och minnena.
+              Varje event har sin egen puls. Min uppgift är att förstärka den.
             </p>
 
             <p>
-              Oavsett om det handlar om ett företagsevent, ett fullsatt
-              dansgolv eller en elegant cocktailkväll skapar jag
-              skräddarsydda musikupplevelser med känsla, precision och en
-              förståelse för att inget event är det andra likt.
+              Från företagsevent och stilfulla middagar till pulserande dansgolv 
+              skapar jag skräddarsydda musikupplevelser där musik, publik och atmosfär samspelar. 
+              Med erfarenhet, fingertoppskänsla och ett genuint engagemang 
+              ser jag till att varje event får sitt eget uttryck.
             </p>
 
           </div>
