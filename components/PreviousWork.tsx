@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 
 const featuredLogos = [
@@ -19,7 +19,7 @@ const featuredLogos = [
 
 const hiddenLogos = [
   { name: "Restaurang AG", file: "ag.svg", height: 34 },
-  { name: "East", file: "east.png", height: 60 },
+  { name: "East", file: "east.svg", height: 60 },
   { name: "Forefront", file: "forefront.png", height: 60 },
   { name: "Supper", file: "supper.svg", height: 104 },
  { name: "Nosh and Chow", file: "noshnchow.svg", height: 50 },
@@ -54,15 +54,17 @@ function LogoRow({
             opacity: 0.5,
           }}
         >
-          <img
-            src={`/logos/${logo.file}`}
-            alt={logo.name}
-            style={{
-              height: `${logo.height}px`,
-              width: "auto",
-            }}
-            className="object-contain"
-          />
+         <Image
+  src={`/logos/${logo.file}`}
+  alt={logo.name}
+  width={180}
+  height={logo.height}
+  style={{
+    height: `${logo.height}px`,
+    width: "auto",
+  }}
+  className="object-contain"
+/>
         </div>
       ))}
     </div>
@@ -73,7 +75,8 @@ export default function PreviousWork() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <section className="bg-[#080808] text-[#F2EFE9]">
+    <section className="bg-[var(--background)] text-[#F2EFE9]">
+      
       <div className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-40">
 
         <div className="text-center">
@@ -82,8 +85,8 @@ export default function PreviousWork() {
             Tidigare uppdrag
           </p>
 
-          <h2 className="text-2xl font-light md:text-4xl">
-            Ett urval
+          <h2 className="text-3xl font-light md:text-5xl">
+            I gott sällskap
           </h2>
 
         </div>
@@ -103,12 +106,12 @@ export default function PreviousWork() {
         <div className="mt-14 md:mt-20 flex justify-center">
 
           <button
+          aria-expanded={showMore}
            type="button"
   onClick={() => {
-    console.log("KLICK!");
     setShowMore(!showMore);
   }}
-  className="text-sm uppercase tracking-[0.35em] text-neutral-500 transition-colors duration-300 hover:text-white"
+  className="text-sm uppercase tracking-[0.35em] text-neutral-500 transition-colors duration-500 hover:text-white"
 >
   {showMore
     ? "− Visa färre uppdrag"

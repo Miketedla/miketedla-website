@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LatestMix() {
   return (
-    <section className="bg-[#080808] text-[#F2EFE9]">
+    <section className="bg-[var(--background)] text-[#F2EFE9]">
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-40">
         <div className="text-center">
           <p className="mb-5 text-sm uppercase tracking-[0.35em] text-neutral-500">

@@ -45,9 +45,11 @@ export default function Hero() {
 <nav className="absolute top-0 left-0 z-20 w-full px-6 py-8 md:px-8 md:py-8">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
 
-  <img
+<Image
   src="/branding/MT-monogram-master.svg"
   alt="Mike Tedla"
+  width={180}
+  height={56}
   className="h-10 w-auto md:h-14"
 />
 
@@ -109,6 +111,11 @@ export default function Hero() {
             Musikupplevelser för företag, restauranger,
             nattklubbar och privata tillställningar.
           </p>
+
+<p className="sr-only">
+  Mike Tedla är en professionell DJ i Stockholm som spelar på företagsevent,
+  restauranger, nattklubbar och privata tillställningar.
+</p>
 
           <a
             href="mailto:booking@miketedla.com"

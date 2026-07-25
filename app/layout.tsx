@@ -2,12 +2,29 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import PersonSchema from "./person-schema";
 
 export const metadata: Metadata = {
-  title: "Mike Tedla | DJ & Eventpartner",
+  metadataBase: new URL("https://miketedla.com"),
+
+  title: "Mike Tedla | DJ i Stockholm",
 
   description:
-    "Musikupplevelser för företag, restauranger, nattklubbar och privata event.",
+    "Professionell DJ i Stockholm för företagsevent, restauranger, nattklubbar och privata event.",
+ 
+    keywords: [
+  "DJ Stockholm",
+  "DJ",
+  "DJ företagsevent",
+  "DJ restaurang",
+  "DJ nattklubb",
+  "Event DJ",
+  "Mike Tedla",
+],
+ 
+    alternates: {
+    canonical: "https://miketedla.com",
+  },
 
   icons: {
     icon: "/branding/MT-monogram-bold-favicon.svg",
@@ -48,12 +65,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-   <html lang="sv">
-  <body>
-    {children}
-    <Analytics />
-  </body>
-  <GoogleAnalytics gaId="G-0F6XH2NQ9N" />
-</html>
+    <html lang="sv">
+      <body>
+        {children}
+        <Analytics />
+        <GoogleAnalytics gaId="G-0F6XH2NQ9N" />
+        <PersonSchema />
+      </body>
+    </html>
   );
 }
