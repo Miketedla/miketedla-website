@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Mike Tedla | DJ & Eventpartner",
@@ -47,11 +48,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="sv">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
+   <html lang="sv">
+  <body>
+    {children}
+    <Analytics />
+  </body>
+
+  <GoogleAnalytics gaId="G-0F6XH2NQ9N" />
+</html>
   );
 }
