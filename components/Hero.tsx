@@ -81,23 +81,23 @@ export default function Hero() {
         <div className="max-w-4xl text-center text-white">
 
 
-          <h1 className="mt-2 whitespace-nowrap text-[26px] font-light tracking-[0.32em] text-white/95 md:text-6xl md:tracking-[0.45em]">
+          <h1 className="mt-2 whitespace-nowrap text-[26px] font-light tracking-[0.32em] pl-[0.32em] text-white/95 md:text-6xl md:tracking-[0.45em] md:pl-[0.45em]">
             MIKE TEDLA
           </h1>
 
           <div className="mx-auto mt-6 h-px w-16 bg-accent" />
 
-          <p className="mt-5 whitespace-nowrap text-[10px] uppercase tracking-[0.38em] text-accent md:text-xs md:tracking-[0.6em]">
+          <p className="mt-5 whitespace-nowrap text-[10px] uppercase tracking-[0.38em] pl-[0.38em] text-accent md:text-xs md:tracking-[0.6em] md:pl-[0.6em]">
             FOR EVENTS & EXPERIENCES
           </p>
 
           <h2
-            className={`font-serif mt-10 text-2xl md:text-5xl font-medium`}
+            className={`font-serif mt-10 text-balance text-2xl md:text-5xl font-medium`}
           >
             Äntligen lite fest. Det var så längesen sist.
           </h2>
 
-          <p className="mx-auto mt-6 max-w-md text-[15px] leading-7 text-white/70 md:max-w-lg md:text-base md:leading-8">
+          <p className="mx-auto mt-6 max-w-md text-balance text-[15px] leading-7 text-white/70 md:max-w-lg md:text-base md:leading-8">
             Musikupplevelser för företag, restauranger,
             nattklubbar och privata tillställningar.
           </p>

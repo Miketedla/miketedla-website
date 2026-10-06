@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section className="bg-background text-[#F2EFE9]">
-      <div className="mx-auto max-w-5xl px-6 py-32 text-center md:py-48">
+    <section className="flex min-h-lvh flex-col justify-center bg-background text-[#F2EFE9]">
+      <div className="mx-auto w-full max-w-5xl px-6 py-24 text-center">
 
         <h2 className="text-xl font-light uppercase tracking-[0.45em] text-neutral-500">
           Berätta om ditt event
