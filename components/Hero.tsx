@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
 import {
   FaInstagram,
   FaSoundcloud,
@@ -7,18 +6,9 @@ import {
 
 import { HiOutlineEnvelope } from "react-icons/hi2";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-});
-
 export default function Hero() {
   return (
-    <main className={`${manrope.className} relative h-screen overflow-hidden bg-black`}>
+    <main className={`font-sans relative h-screen overflow-hidden bg-background`}>
 
       {/* Video */}
 <video
@@ -36,12 +26,12 @@ export default function Hero() {
      
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/80 pointer-events-none" />
+      <div className="absolute inset-0 bg-background/80 pointer-events-none" />
 
       {/* Vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,.75)_100%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(10,10,10,.75)_100%)] pointer-events-none" />
       {/* Transition to next section */}
-      <div className="absolute bottom-0 left-0 h-48 w-full bg-gradient-to-b from-transparent via-black/40 to-[#0D0D0D] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 h-48 w-full bg-gradient-to-b from-transparent via-background/40 to-background pointer-events-none" />
 <nav className="absolute top-0 left-0 z-20 w-full px-6 py-8 md:px-8 md:py-8">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
 
@@ -58,7 +48,7 @@ export default function Hero() {
   href="https://instagram.com/micketedla"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  className="text-white/60 transition-colors duration-300 hover:text-accent"
   aria-label="Instagram"
 >
   <FaInstagram size={22} />
@@ -68,7 +58,7 @@ export default function Hero() {
   href="https://soundcloud.com/miketedla"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  className="text-white/60 transition-colors duration-300 hover:text-accent"
   aria-label="SoundCloud"
 >
   <FaSoundcloud size={24} />
@@ -76,7 +66,7 @@ export default function Hero() {
 
  <a
   href="mailto:booking@miketedla.com"
-  className="text-white/60 transition-colors duration-300 hover:text-[#C8A86A]"
+  className="text-white/60 transition-colors duration-300 hover:text-accent"
   aria-label="Kontakt"
 >
   <HiOutlineEnvelope size={22} />
@@ -91,18 +81,18 @@ export default function Hero() {
         <div className="max-w-4xl text-center text-white">
 
 
-          <h1 className="mt-2 text-3xl md:text-6xl font-light tracking-[0.45em] text-white/95">
+          <h1 className="mt-2 whitespace-nowrap text-[26px] font-light tracking-[0.32em] text-white/95 md:text-6xl md:tracking-[0.45em]">
             MIKE TEDLA
           </h1>
 
-          <div className="mx-auto mt-6 h-px w-16 bg-[#C8A86A]" />
+          <div className="mx-auto mt-6 h-px w-16 bg-accent" />
 
-          <p className="mt-5 text-xs uppercase tracking-[0.6em] text-[#C8A86A]">
+          <p className="mt-5 whitespace-nowrap text-[10px] uppercase tracking-[0.38em] text-accent md:text-xs md:tracking-[0.6em]">
             FOR EVENTS & EXPERIENCES
           </p>
 
           <h2
-            className={`${cormorant.className} mt-10 text-2xl md:text-5xl font-medium`}
+            className={`font-serif mt-10 text-2xl md:text-5xl font-medium`}
           >
             Äntligen lite fest. Det var så längesen sist.
           </h2>
@@ -119,7 +109,7 @@ export default function Hero() {
 
           <a
             href="mailto:booking@miketedla.com"
-            className="mt-10 inline-flex border border-[#C8A86A] px-7 py-4 text-xs uppercase tracking-[0.3em] md:px-10 md:text-sm transition-all duration-500 hover:bg-[#C8A86A] hover:text-black"
+            className="mt-10 inline-flex border border-accent px-7 py-4 text-xs uppercase tracking-[0.3em] md:px-10 md:text-sm transition-all duration-500 hover:bg-accent hover:text-black"
           >
             Berätta om ditt event
           </a>

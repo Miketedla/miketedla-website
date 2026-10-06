@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BehindTheDecks() {
   return (
-    <section className="bg-[var(--background)] text-[#F2EFE9]">
+    <section className="bg-background text-[#F2EFE9]">
       <div className="mx-auto max-w-5xl px-6 py-24 md:px-8 md:py-40">
 
         <div className="mb-20 text-center">
