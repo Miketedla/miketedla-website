@@ -44,26 +44,19 @@ function LogoRow({
   }[];
 }) {
   return (
-    <div className="flex flex-wrap justify-center gap-y-12 md:flex md:flex-wrap md:justify-center md:gap-x-20 md:gap-y-16">
+    <div className="grid grid-cols-3 items-center gap-x-6 gap-y-10 md:flex md:flex-wrap md:justify-center md:gap-x-20 md:gap-y-16">
       {logos.map((logo) => (
         <div
           key={logo.name}
-         className="flex w-full items-center justify-center md:w-[180px] transition-opacity duration-300 hover:opacity-100"
-          style={{
-            height: `${logo.height}px`,
-            opacity: 0.5,
-          }}
+          className="flex h-[min(calc(var(--logo-h)*0.6),40px)] min-w-0 items-center justify-center opacity-50 transition-opacity duration-300 hover:opacity-100 md:h-[var(--logo-h)] md:w-[180px]"
+          style={{ "--logo-h": `${logo.height}px` } as React.CSSProperties}
         >
          <Image
   src={`/logos/${logo.file}`}
   alt={logo.name}
   width={180}
   height={logo.height}
-  style={{
-    height: `${logo.height}px`,
-    width: "auto",
-  }}
-  className="object-contain"
+  className="h-full w-auto max-w-full object-contain"
 />
         </div>
       ))}
@@ -75,7 +68,7 @@ export default function PreviousWork() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <section className="bg-[var(--background)] text-[#F2EFE9]">
+    <section className="bg-background text-[#F2EFE9]">
       
       <div className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-40">
 
@@ -85,7 +78,7 @@ export default function PreviousWork() {
             Tidigare uppdrag
           </p>
 
-          <h2 className="text-3xl font-light md:text-5xl">
+          <h2 className="font-serif text-4xl font-light md:text-6xl">
             I gott sällskap
           </h2>
 

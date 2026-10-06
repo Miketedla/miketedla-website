@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "DJ & Eventpartner",
     start_url: "/",
     display: "standalone",
-    background_color: "#080808",
-    theme_color: "#080808",
+    background_color: "#0a0a0a",
+    theme_color: "#0a0a0a",
     icons: [
       {
         src: "/branding/apple-touch-icon.png",

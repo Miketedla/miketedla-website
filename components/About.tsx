@@ -1,13 +1,7 @@
 import Image from "next/image";
 export default function About() {
   return (
-    <section
-  className="text-[#F2EFE9]"
-  style={{
-    background:
-      "radial-gradient(circle at top, #151515 0%, #0D0D0D 45%, #080808 100%)",
-  }}
->
+    <section className="bg-background text-[#F2EFE9]">
       <div className="mx-auto max-w-5xl px-6 pt-24 pb-28 md:px-8 md:pt-48 md:pb-48">
 
         <div className="mb-16 flex justify-center transition-all duration-700 md:mb-32">
@@ -21,10 +15,10 @@ export default function About() {
         </div>
 
         <div className="mx-auto max-w-3xl">
-<p className="mb-6 text-xs uppercase tracking-[0.4em] text-[#C8A86A]">
+<p className="mb-8 text-[7px] tracking-[0.5em] uppercase text-accent md:text-[8px] md:tracking-[0.55em]">
   DJ & EVENTPARTNER
 </p>
-          <h2 className="text-4xl font-light leading-[0.95] md:text-8xl">
+          <h2 className="font-serif text-5xl font-light leading-[0.95] md:text-8xl">
             Musik som lyfter varje ögonblick.
           </h2>
 
